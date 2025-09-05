@@ -1,0 +1,21 @@
+
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+app:
+  jwt:
+    secret: "change-me-super-secret-256-key-at-least-32-chars"
+    expirationMs: 86400000
+  wompi:
+    baseUrl: "https://sandbox.wompi.co"
+    publicKey: "pub_test_xxx"
+    privateKey: "prv_test_xxx"
+    webhookSecret: "change-me"
